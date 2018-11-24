@@ -13,22 +13,6 @@ class Pokemon: Codable {
     var tipo:String
     var stats:[String:Int] = [String:Int]()
     var imagen:String
-    
-    
-    /*init?(json:[String:Any]){
-        guard let nombre = json["nombre"] as? String,
-        let tipo = json["tipo"] as? String,
-        let stats = json["stats"] as? [String:Int],
-        let imagen = json["imagen"] as? String else {
-                return
-        }
-        
-        self.nombre = nombre
-        self.tipo = tipo
-        self.stats = stats
-        self.imagen = imagen
-        
-    }*/
 
     init(nombre:String, stats:[String:Int],tipo:String, imagen:String){
         self.nombre = nombre
